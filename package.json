@@ -1,0 +1,11 @@
+{
+	"scripts": {
+		"clean": "rimraf dist",
+		"dev": "eleventy --serve",
+		"build": "eleventy"
+	},
+	"dependencies": {
+		"@11ty/eleventy": "latest",
+		"rimraf": "^5.0.5"
+	}
+}

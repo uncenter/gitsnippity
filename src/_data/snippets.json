@@ -1,0 +1,6 @@
+[
+	{
+		"title": "Get the most recent commit message",
+		"code": "git log -1 --pretty=%B"
+	}
+]
