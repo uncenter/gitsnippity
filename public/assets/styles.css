@@ -1,7 +1,29 @@
+:root {
+	--black: #111;
+	--black-gray: #222;
+	--white-gray: #eee;
+	--white: #fff;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: var(--white);
+		--fg: var(--black);
+		--gray: var(--black-gray);
+	}
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: var(--black);
+		--fg: var(--white);
+		--gray: var(--white-gray);
+	}
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
-	color: #222;
-	background-color: #fff;
+	color: var(--fg);
+	background-color: var(--bg);
 	line-height: 1.4;
 	min-height: 100%;
 	position: relative;
@@ -16,10 +38,12 @@ main {
 header h1 {
 	text-align: center;
 }
+
 section,
 header {
 	margin: 2em 0;
 }
+
 h1,
 h2,
 h3,
@@ -43,8 +67,7 @@ p {
 
 footer {
 	padding: 1rem;
-	background: #222;
-	color: white;
+	background: var(--gray);
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -54,7 +77,7 @@ footer {
 }
 
 footer a {
-	color: white;
+	color: var(--bg);
 }
 
 @media screen and (min-width: 680px) {
@@ -70,20 +93,10 @@ footer a {
 }
 
 .anchor {
-	color: #222;
+	color: var(--gray);
 	text-decoration: none;
 }
 .anchor:hover,
 .anchor:focus {
 	text-decoration: underline;
-}
-
-@media (prefers-color-scheme: dark) {
-	body {
-		background: #111;
-		color: #ccc;
-	}
-	.anchor {
-		color: #ccc;
-	}
 }
