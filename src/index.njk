@@ -7,12 +7,18 @@ title: gitsnippity
     <h1>gitsnippity</h1>
 </header>
 
-{% for snippet in snippets %}
-<section>
-    <h2>
-        <a class="anchor" href="#{{ snippet.title | slugify }}" id="{{ snippet.title | slugify }}">{{ snippet.title }}</a>
-    </h2>
-    <pre class="language-git"><code>{{ snippet.code }}</code></pre>
-    {% if snippet.desc %}<p>{{ snippet.desc }}</p>{% endif %}
-</section>
-{% endfor %}
+<main>
+    {% for snippet in snippets %}
+    <section>
+        <h2>
+            <a class="anchor" href="#{{ snippet.title | slugify }}" id="{{ snippet.title | slugify }}">{{ snippet.title }}</a>
+        </h2>
+        <pre class="language-git"><code>{{ snippet.code }}</code></pre>
+        {% if snippet.desc %}<p>{{ snippet.desc }}</p>{% endif %}
+    </section>
+    {% endfor %}
+</main>
+
+<footer>
+    <a href="https://github.com/uncenter/gitsnippity">GitHub</a>
+</footer>

@@ -3,9 +3,22 @@ body {
 	color: #222;
 	background-color: #fff;
 	line-height: 1.4;
-	margin: 0;
 	min-height: 100%;
 	position: relative;
+	margin: 0;
+}
+
+main {
+	margin: 1em;
+	clear: both;
+}
+
+header h1 {
+	text-align: center;
+}
+section,
+header {
+	margin: 2em 0;
 }
 h1,
 h2,
@@ -23,55 +36,39 @@ h1 {
 h2 {
 	font-size: 1.75em;
 }
+
 p {
 	margin: 1em 0;
 }
+
 footer {
-	padding: 1em;
+	padding: 1rem;
 	background: #222;
 	color: white;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
 }
+
 footer a {
 	color: white;
 }
-body {
-	margin: 1em;
-	clear: both;
-}
+
 @media screen and (min-width: 680px) {
-	body {
+	main {
 		margin: 0 100px 0 170px;
 		max-width: 680px;
 	}
 }
 @media screen and (min-width: 1020px) {
-	body {
+	main {
 		margin: 0 auto;
 	}
 }
-header h1 {
-	text-align: center;
-}
-section,
-header {
-	margin: 2em 0;
-}
-.no-bottom-margin {
-	margin-bottom: 0;
-}
-.top-lined {
-	padding-top: 2em;
-	border-top: 1px solid #000;
-}
-.bottom-lined {
-	padding-bottom: 2em;
-	border-bottom: 1px solid #000;
-}
-.intro {
-	display: flex;
-	flex-direction: column;
-}
+
 .anchor {
 	color: #222;
 	text-decoration: none;
@@ -80,30 +77,14 @@ header {
 .anchor:focus {
 	text-decoration: underline;
 }
-.no-wrap {
-	white-space: nowrap;
-}
-.github-icon {
-	height: 16px;
-	vertical-align: middle;
-	margin-right: 0.25em;
-}
-footer {
-	display: flex;
-	flex-direction: column;
-}
-@media screen and (min-width: 800px) {
-	footer {
-		flex-direction: row;
-		justify-content: space-between;
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #111;
+		color: #ccc;
 	}
-	.copyright {
-		order: 0;
-	}
-	.contact,
-	.twitter {
-		order: 1;
-		margin-left: 1em;
+	.anchor {
+		color: #ccc;
 	}
 }
 
