@@ -18,21 +18,17 @@
 }
 
 #lightswitch {
-	float: right;
-	overflow: hidden;
-	border: 2px solid var(--gray);
+	position: absolute;
+	top: 0.25rem;
+	right: 0;
 	color: var(--fg);
 	background: none;
-	font-size: 1rem;
-	display: flex;
-	align-items: center;
+	border: 2px solid var(--gray);
+	border-right: none;
 	cursor: pointer;
 	padding: 0.5rem;
-	border-right: none;
-	text-align: left;
 	-webkit-appearance: none;
 	appearance: none;
-	text-align: left;
 	font-family: "Open Sans", sans-serif;
 }
 
