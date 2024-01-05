@@ -50,6 +50,7 @@ body {
 	background-color: var(--bg);
 	line-height: 1.4;
 	min-height: 100%;
+	padding-bottom: 2rem;
 	position: relative;
 	margin: 0;
 }
