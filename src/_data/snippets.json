@@ -6,5 +6,17 @@
 	{
 		"title": "Get the most recent commit hash",
 		"code": "git rev-parse HEAD"
+	},
+	{
+		"title": "Check if you are inside of a repository",
+		"code": "git rev-parse --is-inside-work-tree"
+	},
+	{
+		"title": "Get the current branch",
+		"code": "git branch --show-current"
+	},
+	{
+		"title": "Get the default branch name from origin remote",
+		"code": "git remote show origin | grep 'HEAD branch' | cut -d' ' -f5"
 	}
 ]
