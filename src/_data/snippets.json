@@ -18,5 +18,9 @@
 	{
 		"title": "Get the default branch name from origin remote",
 		"code": "git remote show origin | grep 'HEAD branch' | cut -d' ' -f5"
+	},
+	{
+		"title": "Reset/clear uncommitted changes",
+		"code": "git restore -s HEAD ."
 	}
 ]
