@@ -1,5 +1,13 @@
 [
 	{
+		"title": "Add changes to most recent commit",
+		"code": "git commit --amend --no-edit"
+	},
+	{
+		"title": "Reset/clear uncommitted changes",
+		"code": "git restore -s HEAD ."
+	},
+	{
 		"title": "Get the most recent commit message",
 		"code": "git log -1 --pretty=%B"
 	},
@@ -18,9 +26,5 @@
 	{
 		"title": "Get the default branch name from origin remote",
 		"code": "git remote show origin | grep 'HEAD branch' | cut -d' ' -f5"
-	},
-	{
-		"title": "Reset/clear uncommitted changes",
-		"code": "git restore -s HEAD ."
 	}
 ]
